@@ -1,0 +1,118 @@
+<!doctype html>
+<html ng-app='todoApp'>
+  <head>
+    <link rel='stylesheet' href='../css/index.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+    
+    <script src='http://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+  crossorigin='anonymous'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js'></script>
+    
+
+    <!-- My Scripts -->
+    <script src='../js/cv.js'></script>
+    <script src='../js/projectsFiller'></script>
+    
+  </head>
+  <body>
+    <!-- header section -->
+    <header>	
+      <title>
+        Web Site on Development for learning purposes
+      </title>
+    </header>
+    <!-- end header section -->
+
+    <!-- topbar section -->
+    <div class='container'>
+      <section id='topbar' >
+        <ul class='col-md-11'>
+          <li><a href='projects.html'> Projects </a></li>
+          <li><a href='cv.html'> CV       </a></li>
+          <li><a href='interests.html'> Interests</a></li>
+        </ul> 
+        <ul class='col-md-1'>
+          <li><a href='index.html'> Home </a></li>
+        </ul> 
+      </section>
+    </div>
+    <!-- end topbar section -->
+
+    <!-- content section -->
+    <!-- content section -->
+    <div class='container'>
+      <section class='main-row listas'>
+        <!--begin left panel selector> -->
+        <div class='col-md-3'>
+          <div>
+            <div class='titulos' onclick='CollapseDiv(this)' value='0'>     Web </div>   
+            <div class='optionsContainner'>
+              <i class='fa fa-angle-right icono'></i>
+              <i class='fa fa-angle-up icono' style='display: none;'></i>     
+                  <div class='opciones' id='r0' style='font-weight: normal;display: none' onclick='setContent(this)' name='Jquery'>     Jquery </div>
+                  <div class='opciones' id='r0' style='font-weight: normal;display: none' onclick='setContent(this)' name='Angular'> Angular</div>
+                  <div class='opciones' id='r0' style='font-weight: normal;display: none' onclick='setContent(this)' name='React' >  React</div>
+                  <!--<div class='opciones' id='r0' style='font-weight: normal;display: none' onclick='setContent(this)' name='Angular' value='0'> Node</div>-->
+            </div>   
+          </div>
+          <div>
+            <div class='titulos' onclick='CollapseDiv(this)' value='0'> Audiovisual </div>
+            <div class='optionsContainner'>
+                <i class='fa fa-angle-right icono'></i>
+                <i class='fa fa-angle-up icono' style='display: none;'></i>     
+                <div class='opciones' id='r0' style='font-weight: normal;display: none' onclick='setContent(this)' name='Image'> Image</div>
+                <div class='opciones' id='r0' style='font-weight: normal;display: none' onclick='setContent(this)' name='Sound'> Sound</div>
+                <div class='opciones' id='r0' style='font-weight: normal;display: none' onclick='setContent(this)' name='Video'> Video</div>
+            </div>  
+          </div>
+          <div>
+            <div class='titulos' onclick='CollapseDiv (this)' value='0'> Other </div>
+            <div class='optionsContainner'> 
+              <i class='fa fa-angle-right icono'></i>
+              <i class='fa fa-angle-up icono' style='display: none;'></i>   
+              <div class='opciones' id='r0' style='font-weight: normal;display: none' onclick='setContent(this)' name='MachineLearning'> Machine Learning</div>
+            </div>  
+          </div>
+        </div>
+        <!--end left panel selector> -->
+        <div class='col-md-9' id='InfoContainer'>
+          <div>
+            <h1> Projects </h1>
+         </div>
+        </div>
+      </section>
+    </div>  
+    <!-- end content section -->
+    <!-- end content section -->
+
+    <!-- footer section -->
+    <div class='container' id="footerInfo"onclick='collapsePersonalInfo()'>
+      <footer>
+        <div class='col-md-2'>
+          <img src='../img/profilePhoto.pgn.png' />
+        </div>
+        <div class='col-md-1'></div>
+        <div class='col-md-8'>
+          <p></p>
+
+  I'm Xavier and I'm a web developer. I'm learning the characteristics of the web applications. I norally work with languajes that are related to the webstite and currently i am learning and improving in some javascript frameworks such as angular, react or node. I love to solve problems in different ways (Never surrender!)
+      <p></p>
+  Even though I focus heavily on website, i've been working with a lot of different languajes. I started studyng audiovisual systems engineering, where i learnt about audivisual processing with matlab: image processing, ray tracking, audio 3D, tridimensional images, .... because it is the theme i feel pleased about (i always loved music and cinema). After that, i started programming with android, java or python to change the possibilities that the applications will bring.
+      <p></p>
+  Nowadays things change fast and there’s more to learn them all. That's why I am focussing on web applications and it's implementation on mobiles as well (work in an interesting projects of the commented themes will be the BEST, even though i am learning more about web lately and forgetting more about media).
+
+        </div>
+      </footer>
+    </div>
+    <div class="container">
+      <div id="CollapsedPersonalInfo" class='col-md-12'  style="background-color: #333333">
+        <img src='../img/plus.png' onclick='collapsePersonalInfo()'/>
+      </div>
+    </div>
+    <!-- end footer section -->
+  </body>
+</html>
+
