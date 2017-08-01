@@ -1,0 +1,42 @@
+//Global data
+ProjectsContainner = [];
+	
+	ProjectsContainner['Jquery'] 			= "<div class='container col-md-12'> <table class='table'> <thead> <tr> <th class='col-md-3'>Jquery Projects</th> 			<th class='col-md-6'>Description</th> <th class='col-md-3'>Visit online</th> </tr></thead> <tbody> <tr> <td> </td><td> </td><td> </td></tr></tbody> </table></div>";
+	ProjectsContainner['Angular'] 			= "<div class='container col-md-12'> <table class='table'> <thead> <tr> <th class='col-md-3'>Angular Projects</th> 			<th class='col-md-6'>Description</th> <th class='col-md-3'>Visit online</th> </tr></thead> <tbody> <tr> <td> </td><td> </td><td> </td></tr></tbody> </table></div>";
+	ProjectsContainner['React'] 			= "<div class='container col-md-12'> <table class='table'> <thead> <tr> <th class='col-md-3'>React Projects</th> 			<th class='col-md-6'>Description</th> <th class='col-md-3'>Visit online</th> </tr></thead> <tbody> <tr> <td> </td><td> </td><td> </td></tr></tbody> </table></div>";
+	ProjectsContainner['Image'] 			= "<div class='container col-md-12'> <table class='table'> <thead> <tr> <th class='col-md-3'>Image Projects</th> 			<th class='col-md-6'>Description</th> <th class='col-md-3'>Listen online</th> </tr></thead> <tbody> <tr> <td> </td><td> </td><td> </td></tr></tbody> </table></div>";
+	ProjectsContainner['Sound'] 			= "<div class='container col-md-12'> <table class='table'> <thead> <tr> <th class='col-md-3'>Sound Projects</th> 			<th class='col-md-6'>Description</th> <th class='col-md-3'>Visit online</th> </tr></thead> <tbody> <tr> <td> Fem Jaque Mate</td><td> Ludic cultural program about the barcelona's local events and spectacles</td><td> <div> Program on mp3 exmples: </div><div><a href='../audios/programa11-femjaquematefemradio.mp3' target='_blank'>listen program 11</a></div><div><a href='../audios/programa12-femjaquematefemradio.mp3' target='_blank'>listen program 12</a></div></td></tr></tbody> </table></div>";
+	ProjectsContainner['Video'] 			= "<div class='container col-md-12'> <table class='table'> <thead> <tr> <th class='col-md-3'>Video Projects</th> 			<th class='col-md-6'>Description</th> <th class='col-md-3'>Visit online</th> </tr></thead> <tbody> <tr> <td> </td><td> </td><td> </td></tr></tbody> </table></div>";
+	ProjectsContainner['MachineLearning'] 	= "<div class='container col-md-12'> <table class='table'> <thead> <tr> <th class='col-md-3'>Machine Learning Projects</th> <th class='col-md-6'>Description</th> <th class='col-md-3'>Visit online</th> </tr></thead>  <tbody> <tr> <td> Sparse linear regression for an electronic tongue data</td><td> Final Grade Project</td><td> <div>Full Document: <a href='../docs/TFG_Xavier_DelaFuente_Quintana_GESAUD.pdf' target='_blank'>document</a></div><div>Presentation : <a href='../docs/Regressió sparse per les dades de una llengua electrònica.pdf' target='_blank'>document</a></div></td></tr></tbody> </table></div>";
+
+//Functions to rediret the page to the corresponding information
+function setContent(element){
+	$('#InfoContainer').empty();
+	switch(element.attributes['name'].value){
+		case 'Jquery':
+			$('#InfoContainer').html(ProjectsContainner['Jquery'])
+			break;
+		case 'Angular':
+			$('#InfoContainer').html(ProjectsContainner['Angular'])
+			break;
+		case 'React':
+			$('#InfoContainer').html(ProjectsContainner['React'])
+			break;
+		case 'Image':
+			$('#InfoContainer').html(ProjectsContainner['Image'])
+			break;
+		case 'Sound':
+			$('#InfoContainer').html(ProjectsContainner['Sound'])
+			break;
+		case 'Video':
+			$('#InfoContainer').html(ProjectsContainner['Video'])
+			break;
+		case 'MachineLearning':
+			$('#InfoContainer').html(ProjectsContainner['MachineLearning'])
+			break;
+		default:
+			console.log('No case');
+			break;
+	};
+}
+

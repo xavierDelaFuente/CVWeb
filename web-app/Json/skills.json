@@ -1,0 +1,87 @@
+Currently =  [
+			{skill:'HTML',
+			progress:90,
+			logo:'../img/html.png'},
+
+			{skill:'Javascript',
+			progress:95,
+			logo:'../img/javascript.png'},
+
+			{skill:'Jquery',
+			progress:95,
+			logo:'../img/jquery.png'},
+
+			{skill:'CSS',
+			progress:80,
+			logo:'../img/css.png'},
+
+			{skill:'AJAX',
+			progress:80,
+			logo:'../img/ajax.jpg'},
+
+			{skill:'JSON',
+			progress:80,
+			logo:'../img/json.png'},
+
+			{skill:'Microsoft Dynamics CRM',
+			progress:80,
+			logo:'../img/html.png'},
+
+	];		
+
+Worked =  [
+			{skill:'MySQL',
+			progress:80,
+			logo:'../img/sql.jpg'},
+
+			{skill:'.NET',
+			progress:60,
+			logo:'../img/net.jpg'},
+
+			{skill:'Android',
+			progress:30,
+			logo:'../img/android.jpg'},
+
+			{skill:'Matlab',
+			progress:80,
+			logo:'../img/matlab.jpg'},
+
+			{skill:'Python',
+			progress:50,
+			logo:'../img/python.jpg'},
+
+			{skill:'C #',
+			progress:40,
+			logo:'../img/csharp.jpg'},
+
+			{skill:'JAVA',
+			progress:40,
+			logo:'../img/java.png'},
+
+	];		
+
+Learning =  [
+			{skill:'React',
+			progress:50,
+			logo:'../img/react.png'},
+
+			{skill:'Angular',
+			progress:30,
+			logo:'../img/angular.png'},
+
+			{skill:'Node',
+			progress:5,
+			logo:'../img/node.png'}
+	];	
+
+Interested =  [
+			{skill:'WebGL',
+			progress:5,
+			logo:'../img/sql.jpg'},
+
+			{skill:'Unity',
+			progress:2,
+			logo:'../img/net.jpg'}
+	];		
+
+FullData = {Currently, Worked, Learning, Interested}
